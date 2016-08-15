@@ -1,4 +1,4 @@
-// Показывает все карты в руке игрока
+// Показывает все карты в руке игрока (если не может показать картинку - показывает плейсхолдер)
 cardRender = function(){ 
 	for (n=0; n < playerHand.length; n++) {
 		imgSource = "images/" + playerHand[n].name + playerHand[n].color + ".png";	
