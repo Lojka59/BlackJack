@@ -1,4 +1,5 @@
-// Показывает руки игрока и дилера (0 - показать все карты, 1 - скрыть последнюю карту дилера)
+// Показывает руки игрока и дилера 
+// hide : Number. Скрыть данное количество карт у дилера (справа).
 cardRender = function(hide) { 
 	hide = hide || 0;
 	if (hide > dealerHand.length) hide = dealerHand.length;
