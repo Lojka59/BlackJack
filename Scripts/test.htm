@@ -7,29 +7,8 @@
 	<link href="style.css" rel="stylesheet">	
 </head>
 <body>
-	<div class="header">
-	<button id = "renderPlayer" class = "render" onclick = "cardRender(false);"  type = 'submit' name = 'submit' value = 'renderCard'>renderPlayer</button>
-	<button id = "addPlayer" class = "add" onclick = "cardDraw(1);"  type = 'submit' name = 'submit' value = 'addPlayer'>addPlayer</button>
-	<button id = "renderDealer" class = "render" onclick = "cardRender(true);"  type = 'submit' name = 'submit' value = 'renderCard'>renderDealer</button>
-	<button id = "addDealer" class = "add" onclick = "cardDraw(0);"  type = 'submit' name = 'submit' value = 'addDealer'>addDealer</button>
-	<button id = "clear" class = "clear" onclick = "window.location.reload();"  type = 'submit' name = 'submit' value = 'clear'>clear</button>
-	</div>
 	<div class="hand" id="playerHand" align="center">
-		<script type="text/javascript">
-			deck.create();
-			shuffle();
-			cardDraw(1);
-			cardDraw(1);
-			cardDraw(1);
-		</script>
 	</div>
 	<div class="hand" id="dealerHand" align="center">
-		<script type="text/javascript">
-			deck.create();
-			shuffle();
-			cardDraw(0);
-			cardDraw(0);
-			cardDraw(0);			
-		</script>
 	</div>	
 </body>
