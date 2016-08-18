@@ -106,16 +106,19 @@ deck.create();
 
 // Получить карту игроком
 
-function cardPick(player) {
+function cardPick(player, hide) {
 // player = индекс игрока, 0 = крупье, 1 = игрок
+// hide = Number. Количество карт, которые необходимо спрятать у крупье
 
 switch (player) {
    case 0:
    		dealerHand.push(deck.takeCard());
+   		cardRender(hide);
 		console.log("Крупье взял карту");
     	break;
    case 1:
 		playerHand.push(deck.takeCard());
+		cardRender(hide);
 		console.log("Игрок взял карту");
 };
 };
