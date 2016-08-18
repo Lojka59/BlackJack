@@ -1,6 +1,7 @@
 // Показывает руки игрока и дилера (0 - показать все карты, 1 - скрыть последнюю карту дилера)
 cardRender = function(hide) { 
 	hide = hide || 0;
+	if (hide > dealerHand.length) hide = dealerHand.length;
 	$(".hand").empty();
 	for (var n = 0; n < playerHand.length; n++) {
 		imgSource = "images/" + playerHand[n].name + playerHand[n].color + ".png";
