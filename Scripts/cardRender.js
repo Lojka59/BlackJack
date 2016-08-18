@@ -9,7 +9,7 @@ cardRender = function(hide) {
 		imgSource = "images/" + dealerHand[n].name + dealerHand[n].color + ".png";
 			$("#dealerHand").append("<img id=\"dealerCard\" src=imgSource onerror=\"this.src='images/not_found.png'\">");
 	}
-	if (hide == 1) {
-		$("#dealerHand").append("<img id=\"dealerCard\" src='images/back.png' onerror=\"this.src='images/not_found.png'\">");		
+	for (n = 0; n < hide; n++) {
+		$("#dealerHand").append("<img id=\"dealerCard\" src='images/back.png' onerror=\"this.src='images/not_found.png'\">");	
 	}
 }
