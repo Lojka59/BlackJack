@@ -6,13 +6,13 @@ cardRender = function(hide) {
 	$(".hand").empty();
 	for (var n = 0; n < playerHand.length; n++) {
 		imgSource = "images/" + playerHand[n].name + playerHand[n].color + ".png";
-			$("#playerHand").append("<img id=\"playerCard\" src=imgSource onerror=\"this.src='images/not_found.png'\">");
+			$("#playerHand").append("<img class=\"card\" id=\"playerCard\" src=imgSource onerror=\"this.src='images/not_found.png'\">");
 	}
 	for (n = 0; n < dealerHand.length - hide; n++) {
 		imgSource = "images/" + dealerHand[n].name + dealerHand[n].color + ".png";
-			$("#dealerHand").append("<img id=\"dealerCard\" src=imgSource onerror=\"this.src='images/not_found.png'\">");
+			$("#dealerHand").append("<img class=\"card\" id=\"dealerCard\" src=imgSource onerror=\"this.src='images/not_found.png'\">");
 	}
 	for (n = 0; n < hide; n++) {
-		$("#dealerHand").append("<img id=\"dealerCard\" src='images/back.png' onerror=\"this.src='images/not_found.png'\">");	
+		$("#dealerHand").append("<img class=\"card\" id=\"dealerCard\" src='images/back.png' onerror=\"this.src='images/not_found.png'\">");	
 	}
 }
