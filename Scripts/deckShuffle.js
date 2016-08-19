@@ -131,17 +131,33 @@ function checkPlayerWin() {
 };
 
 
-// Проверяем, есть ли у игрока перебор. возвращает true - если перебор
+// Проверяем, есть ли у игрока перебор
 function checkPlayerFail(){
+  return (playerScore(1) < 22) ? true : false;
+};
+
+// Проверяем максимальные очки игрока с индексом player (игрока = 1, крупье = 0), по умолчанию возвращает очки ИГРОКА
+function playerScore(player){
   var sum = 0, ace = 0;
-  for (var n = 0 ; n < playerHand.length; n++ ) {
-    sum = sum + playerHand[n].score;
-    if (playerHand[n].score == 11) ace++;
+  switch (player) {
+    case 0 :
+      hand = dealerHand;
+      break;
+    case 1:
+      hand = playerHand;
+      break;
+    default:
+    return console.warn("Укажите индекс игрока");
   };
-  // Если перебор, вычитаем 10 и проверяем еще раз за каждого туза
+  for (var n = 0 ; n < hand.length; n++ ) {
+  sum = sum + hand[n].score;
+  if (hand[n].score == 11) ace++;
+};
+
+// Если перебор, вычитаем 10 и проверяем еще раз
   for (n = ace + 1; n > 0; n--) {
-    if (sum < 22) return false;
-    sum = sum - 10;
+    if (sum < 22) return sum;
+    if (n > 1) sum = sum - 10;
   };
-  return true;
+return sum;
 };
