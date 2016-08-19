@@ -126,6 +126,22 @@ switch (player) {
 // считаем набрал ли игрок 21 при раздаче (если набрал, то выйграл кстати больше бабла)
 
 function checkPlayerWin() {
-var sum = playerHand[0].score + playerHand[1].score;
-return (sum == 21) ? true : false;
-}
+  var sum = playerHand[0].score + playerHand[1].score;
+  return (sum == 21) ? true : false;
+};
+
+
+// Проверяем, есть ли у игрока перебор. возвращает true - если перебор
+function checkPlayerFail(){
+  var sum = 0, ace = 0;
+  for (var n = 0 ; n < playerHand.length; n++ ) {
+    sum = sum + playerHand[n].score;
+    if (playerHand[n].score == 11) ace++;
+  };
+  // Если перебор, вычитаем 10 и проверяем еще раз за каждого туза
+  for (n = ace + 1; n > 0; n--) {
+    if (sum < 22) return false;
+    sum = sum - 10;
+  };
+  return true;
+};
