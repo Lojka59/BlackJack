@@ -133,7 +133,7 @@ function checkPlayerWin() {
 
 // Проверяем, есть ли у игрока перебор
 function checkPlayerFail(){
-  return (playerScore(1) < 22) ? true : false;
+  return (playerScore(1) < 22) ? false : true;
 };
 
 // Проверяем максимальные очки игрока с индексом player (игрока = 1, крупье = 0), по умолчанию возвращает очки ИГРОКА
