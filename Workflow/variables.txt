@@ -3,17 +3,17 @@
 
 Variables list for BlackJack project
 
-deck : []; Array of Number.  Массив с индексами карт в строго заданном порядке.
+deck : []; Array of Number.  
 
 
-// возможно надо создать создать объект, который будет содержать индекс, название и стоимость карт.
 
-playerHand : []; Array of Number. Массив с картами игрока.
-dealerHand : []; Array of Number. Массив с картами дилера.
 
-playerScore : Number; Количество очков игрока.
-dealerScore : Number; Количество очков дилера.
+playerHand : []; Array of Number. 
+dealerHand : []; Array of Number. 
 
-bet : Number; Текущая ставка игрока.
-money : Number; Количество денег игрока.
+playerScore : Number; 
+dealerScore : Number; 
+
+bet : Number; 
+money : Number;
 

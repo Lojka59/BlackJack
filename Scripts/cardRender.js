@@ -1,6 +1,6 @@
 // Показывает руки игрока и дилера 
 // hide : Number. Скрыть данное количество карт у дилера (справа).
-cardRender = function(hide) { 
+cardRenderOld = function(hide) { 
 	hide = hide || 0;
 	if (hide > dealerHand.length) hide = dealerHand.length;
 	$(".hand").empty();
@@ -16,3 +16,24 @@ cardRender = function(hide) {
 		$("#dealerHand").append("<img class=\"card\" id=\"dealerCard\" src='images/back.png' onerror=\"this.src='images/not_found.png'\">");	
 	}
 }
+
+// Новая версия с использованием спрайтов
+
+cardRender = function(hide) { 
+	hide = hide || 0;
+	if (hide > dealerHand.length) hide = dealerHand.length;
+	$(".hand").empty();
+	for (var n = 0; n < playerHand.length; n++) {
+		imgClass = playerHand[n].color + playerHand[n].name;
+			$("#playerHand").append("<img class=\"card " + imgClass + "\" src=\"\">");
+	}
+
+	for (n = 0; n < dealerHand.length - hide; n++) {
+		imgClass = dealerHand[n].color + dealerHand[n].name;
+			$("#dealerHand").append("<img class=\"card " + imgClass + "\" src=\"\">");
+	}
+	for (n = 0; n < hide; n++) {
+		$("#dealerHand").append("<img class=\"card back\" src=\"\">");	
+	}
+}
+

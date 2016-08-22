@@ -1,0 +1,332 @@
+.card {
+    background: url("../images/cards.png") no-repeat;
+}
+
+// Club
+.CA {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: 0px 0px; 
+}
+.C2 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -73px 0px; 
+}
+.C3 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -146px 0px; 
+}
+.C4 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -219px 0px; 
+}
+.C5 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -292px 0px; 
+}
+.C6 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -365px 0px; 
+}
+.C7 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -438px 0px; 
+}
+.C8 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -511px 0px; 
+}
+.C9 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -584px 0px; 
+}
+.C10 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -657px 0px; 
+}
+.CJ {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -730px 0px; 
+}
+.CQ {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -803px 0px; 
+}
+.CK {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -876px 0px; 
+}
+
+// Diamonds
+.DA {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: 0px -294px; 
+}
+.D2 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -73px -294px; 
+}
+.D3 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -146px -294px; 
+}
+.D4 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -219px -294px; 
+}
+.D5 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -292px -294px; 
+}
+.D6 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -365px -294px; 
+}
+.D7 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -438px -294px; 
+}
+.D8 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -511px -294px; 
+}
+.D9 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -584px -294px; 
+}
+.D10 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -657px -294px; 
+}
+.DJ {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -730px -294px; 
+}
+.DQ {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -803px -294px; 
+}
+.DK {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -876px -294px; 
+}
+
+
+// Hearts
+.HA {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: 0px -196px; 
+}
+.H2 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -73px -196px; 
+}
+.H3 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -146px -196px; 
+}
+.H4 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -219px -196px; 
+}
+.H5 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -292px -196px; 
+}
+.H6 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -365px -196px; 
+}
+.H7 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -438px -196px; 
+}
+.H8 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -511px -196px; 
+}
+.H9 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -584px -196px; 
+}
+.H10 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -657px -196px; 
+}
+.HJ {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -730px -196px; 
+}
+.HQ {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -803px -196px; 
+}
+.HK {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -876px -196px; 
+}
+
+// Hearts
+.SA {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: 0px -98px; 
+}
+.S2 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -73px -98px; 
+}
+.S3 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -146px -98px; 
+}
+.S4 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -219px -98px; 
+}
+.S5 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -292px -98px; 
+}
+.S6 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -365px -98px; 
+}
+.S7 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -438px -98px; 
+}
+.S8 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -511px -98px; 
+}
+.S9 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -584px -98px; 
+}
+.S10 {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -657px -98px; 
+}
+.SJ {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -730px -98px; 
+}
+.SQ {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -803px -98px; 
+}
+.SK {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -876px -98px; 
+}
+
+
+.back {
+    width: 73px;
+    height: 98px; 
+    display: inline-block; 
+    background-position: -949px 0px; 
+}
