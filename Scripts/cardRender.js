@@ -40,9 +40,10 @@ cardRender = function(hide) {
 // Сбросить игру
 
 resetGame = function() {
-	$(".hand").empty();
-	shuffle();
+	$(".hand").empty();	
 	dealerHand = [];
 	playerHand = [];
+	deck.Create();
+	shuffle();
 }
 
