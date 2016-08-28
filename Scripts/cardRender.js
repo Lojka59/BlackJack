@@ -37,3 +37,12 @@ cardRender = function(hide) {
 	}
 }
 
+// Сбросить игру
+
+resetGame = function() {
+	$(".hand").empty();
+	shuffle();
+	dealerHand = [];
+	playerHand = [];
+}
+
