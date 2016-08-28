@@ -16,12 +16,17 @@
 	</div>
 </div>	
 	<script type="text/javascript">
+	cardPick(0);
+	cardPick(0,1);
+	cardPick(1);
+	cardPick(1);
+	cardRender(1);
 	</script>
 	<br><br>
 	<div>
-		<button type = "button" onClick = "cardPick(0)">Pick card dealer</button> 	
-		<button type = "button" onClick = "cardPick(1)">Pick card player</button> 
+		<button id = "newGame" type = "button" onClick = "resetGame()">Новая игра</button>
 		<br><br>
-		<button type = "button" onClick = "resetGame()">Reset game</button>
+		<button id = "more" type = "button" onClick = "cardPick(1,1)" hidden>Взять еще</button> 
+		<button id = "stop" type = "button" onClick = "cardRender(0)" hidden>Остановиться</button>
 	</div>
 </body>

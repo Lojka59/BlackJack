@@ -45,5 +45,22 @@ resetGame = function() {
 	playerHand = [];
 	deck.create();
 	shuffle();
+	cardPick(0);
+	cardPick(0,1);
+	cardPick(1);
+	cardPick(1);
+	cardRender(1);
 }
 
+// Управляет показом кнопок
+
+$(document).ready(function() {
+	$('#newGame').click(function () {
+		$(this).hide();
+		$('#more').show();
+		$('#stop').show();
+	})
+	$('#stop').click(function () {
+		$('#newGame').show();
+	})
+})
