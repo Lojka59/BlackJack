@@ -43,7 +43,7 @@ resetGame = function() {
 	$(".hand").empty();	
 	dealerHand = [];
 	playerHand = [];
-	deck.Create();
+	deck.create();
 	shuffle();
 }
 
