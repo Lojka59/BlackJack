@@ -1,10 +1,32 @@
 .hand {
-    width: 400px; 
-    background: #ccc;
+	//background: #ccc;
     padding: 5px;
-    padding-right: 20px; 
-    border: solid 1px black; 
-    float: left;
+    //border: solid 1px black; 
+    position: relative;
+    
+}
+.backG {
+position: absolute;
+
+
+}
+.table {
+position: relative;
+top: 20px;
+left: 30px;
+background: #006400;
+width: 610px;
+height: 480px;
+}
+
+.playerH {
+  top: 200px;
+  overflow: 
+
+}
+.dealerH {
+  top: 65px;
+  
 }
 .card {
   margin-right: 5px;
