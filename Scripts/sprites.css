@@ -2,12 +2,12 @@
     background: url("../Images/cards.png") no-repeat;
 }
 
-// Club
+
 .CA {
     width: 73px;
     height: 98px; 
     display: inline-block; 
-    background-position: -0px 0px; 
+    background-position: 0px 0px; 
 }
 .C2 {
     width: 73px;
@@ -82,7 +82,7 @@
     background-position: -876px 0px; 
 }
 
-// Diamonds
+
 .DA {
     width: 73px;
     height: 98px; 
@@ -163,7 +163,7 @@
 }
 
 
-// Hearts
+
 .HA {
     width: 73px;
     height: 98px; 
@@ -243,7 +243,7 @@
     background-position: -876px -196px; 
 }
 
-// Hearts
+
 .SA {
     width: 73px;
     height: 98px; 
