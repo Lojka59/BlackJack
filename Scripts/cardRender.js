@@ -53,16 +53,24 @@ resetGame = function() {
 }
 
 // Управляет показом кнопок
-
+var test
 $(document).ready(function() {
 	$('#newGame').click(function () {
 		$(this).hide();
 		$('#more').show();
 		$('#stop').show();
-	})
+	});
 	$('#stop').click(function () {
 		$('#newGame').show();
 		$('#more').hide();
 		$('#stop').hide();
-	})
+	});
+	// Новый код
+	$('.button').mouseover(function (){
+		$( this ).fadeTo( 200, 1 );
+	});
+	$('.button').mouseout(function (){
+		test = $(this);
+		$(this).fadeTo(200, 0.5);
+	});
 })
