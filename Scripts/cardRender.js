@@ -62,5 +62,7 @@ $(document).ready(function() {
 	})
 	$('#stop').click(function () {
 		$('#newGame').show();
+		$('#more').hide();
+		$('#stop').hide();
 	})
 })
