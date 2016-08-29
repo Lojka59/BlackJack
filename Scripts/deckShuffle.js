@@ -126,7 +126,10 @@ switch (player) {
 // считаем набрал ли игрок 21 при раздаче (если набрал, то выйграл кстати больше бабла)
 
 function checkPlayerWin() {
-  var sum = playerHand[0].score + playerHand[1].score;
+    var sum = 0;
+    for (var n = 0; n < playerHand.length; n++) {
+    sum = sum + playerHand[n].score;
+    };
   return (sum == 21) ? true : false;
 };
 
@@ -161,3 +164,17 @@ function playerScore(player){
   };
 return sum;
 };
+
+// возвращает номер победителя, 0 =  дилер, 1 = игрок, -1 = ничья
+function findWinner () {
+// В данном случае считаем, что игрок точно не перебрал -> если перебрал, то дилер не берет
+// Значит пербрать может только дилер
+    var p1s, p0s
+    p0s = playerScore(0);
+    p1s = playerScore(1);
+    if (p0s > 21) return 1;
+    if (p0s == p1s) return -1;
+    if (p0s > p1s) return 0;
+    if (p0s < p1s) return 1;
+};
+

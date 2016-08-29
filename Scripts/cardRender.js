@@ -40,37 +40,112 @@ cardRender = function(hide) {
 // Сбросить игру
 
 resetGame = function() {
+    // Вернем кнопки в исходное положение
+//    $('#newGame').fadeTo(0, 0.5);
+//    $('#more').hide();
+//   $('#stop').hide();
+
+    //Игровая логика
 	$(".hand").empty();	
 	dealerHand = [];
 	playerHand = [];
 	deck.create();
 	shuffle();
 	cardPick(0);
-	cardPick(0,1);
+	cardPick(0);
 	cardPick(1);
-	cardPick(1);
-	cardRender(1);
+	cardPick(1, 1);
+    // Как раздали карты проверяем, набрал ли игрок блекджек !
+    if (checkPlayerWin()) {
+        alert("BlackJack !!");
+        endGame(); 
+    };
+
 }
 
+// временная функция
+function endGame() {
+   $('#newGame').fadeTo(0, 0.5);
+   jQuery.data(document.getElementById( "more" ), 'hidden', true);
+   jQuery.data(document.getElementById( "stop" ), 'hidden', true);
+   $('#more').stop(true, true).hide();
+   $('#stop').stop(true, true).hide();
+};
+
+
+
+
+// Проверить, есть ли 17+ очков у дилера
+function checkDealerSum () {
+return true;
+// Фрости напиши функцию
+};
+
+
+// Кнопка взять еще
+
+function takeMore () {
+    cardPick(1,1);
+    if (checkPlayerFail()) {
+        // Тут надо переписать потом
+        alert("Лузер! Перебрал!");
+        endGame();
+        return false;
+    }
+console.log(this);
+    if (checkPlayerWin()) {
+        alert("BlackJack!!");
+        // Тут надо переписать потом
+        endGame(); 
+    };
+};
+
+
+// Кнопка остановиться
+
+function dealerTurn () {
+  cardRender(0);
+  while (!checkDealerSum()) {
+    cardPick(0);
+  };
+  switch (findWinner()) {
+    case -1:
+      alert("Ничья");
+      break
+    case 0:
+      alert("Победил дилер");
+      break
+    case 1:
+      alert("Победил игрок");
+    break
+  };
+
+};
+
 // Управляет показом кнопок
-var test
+
 $(document).ready(function() {
 	$('#newGame').click(function () {
+		$(this).fadeTo(0, 0.5);
 		$(this).hide();
-		$('#more').show();
-		$('#stop').show();
+		$('#more').fadeTo(0, 0.5);
+		$('#stop').fadeTo(0, 0.5);
+		jQuery.data(this, 'hidden', true);
 	});
 	$('#stop').click(function () {
 		$('#newGame').show();
 		$('#more').hide();
-		$('#stop').hide();
+		$(this).fadeTo(0, 0.5);
+		$(this).hide();
+		jQuery.data(this, 'hidden', true);
 	});
 	// Новый код
 	$('.button').mouseover(function (){
+		jQuery.data(this, 'hidden', false);
 		$( this ).fadeTo( 200, 1 );
 	});
 	$('.button').mouseout(function (){
-		test = $(this);
-		$(this).fadeTo(200, 0.5);
+		if (jQuery.data(this, 'hidden') == false) {
+		$(this).fadeTo(200, 0.5);}
 	});
 })

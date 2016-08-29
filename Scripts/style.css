@@ -21,8 +21,8 @@ height: 480px;
 
 .playerH {
   top: 200px;
-  overflow: 
-
+  overflow: hidden;
+  height: 120px;
 }
 .dealerH {
   top: 65px;
@@ -30,6 +30,8 @@ height: 480px;
 }
 .card {
   margin-right: 5px;
+  margin-bottom: 30px;
+  
 }
 
 .button {
